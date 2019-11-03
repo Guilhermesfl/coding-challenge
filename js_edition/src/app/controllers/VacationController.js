@@ -3,11 +3,11 @@ import { absences, members } from '../../api';
 class VacationController {
   async index(req, res) {
     try {
-      const _absences = await absences();
+      let _absences = await absences();
       const _members = await members();
       let response = [];
 
-      _absences.map((e) => e.type === 'vacation');
+      _absences = _absences.filter((e) => e.type === 'vacation');
 
       _absences.forEach((absence) => {
         const abs = absence;
@@ -18,6 +18,7 @@ class VacationController {
           }
         }
       });
+
       response = [...new Set(response)];
 
       return res.json(response);
