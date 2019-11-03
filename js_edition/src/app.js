@@ -1,10 +1,12 @@
 import express from 'express';
+import fs from 'fs';
 import routes from './routes';
 
 class App {
   constructor() {
     this.server = express();
     this.routes();
+    this.tempDir();
   }
 
   routes() {
@@ -13,6 +15,12 @@ class App {
 
   middlewares() {
     this.server.use(express.json());
+  }
+
+  tempDir() {
+    if (!fs.existsSync('./temp')) {
+      fs.mkdirSync('./temp');
+    }
   }
 }
 
