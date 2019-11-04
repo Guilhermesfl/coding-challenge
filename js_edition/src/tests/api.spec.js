@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { members, absences } from './api';
+import { members, absences } from '../api';
 
 const everyItemContainsKey = (key) => (collection) =>
   collection.forEach((item) => assert(Object.keys(item).includes(key)));
@@ -36,4 +36,3 @@ describe('absences', () => {
     });
   });
 });
-
