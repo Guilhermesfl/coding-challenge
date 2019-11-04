@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register ./src/{*,**/*,**/**/*,**/**/**/*,**/**/**/**/*}.spec.js",
+    "test": "nyc --reporter=text mocha --compilers js:babel-register ./src/{*,**/*,**/**/*,**/**/**/*,**/**/**/**/*}.spec.js",
     "lint": "eslint-crewmeister src",
     "dev": "nodemon --exec babel-node src/server.js"
   },
@@ -21,10 +21,13 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "eslint-config-crewmeister": "^3.6.8",
     "husky": "^3.0.9",
     "mocha": "^3.4.2",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "nyc": "^14.1.1"
   },
   "dependencies": {
     "express": "^4.17.1"
