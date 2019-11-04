@@ -21,7 +21,7 @@ class VacationController {
 
       response = [...new Set(response)];
 
-      return res.json(response);
+      return res.json({ total: response.length, vacations: response });
     } catch (e) {
       return res.json({ error: 'Error retrieving members on vacation' });
     }

@@ -21,7 +21,7 @@ class SicknessController {
 
       response = [...new Set(response)];
 
-      return res.json(response);
+      return res.json({ total: response.length, sickness: response });
     } catch (e) {
       return res.json({ error: 'Error retrieving members that are sick' });
     }
