@@ -12,9 +12,9 @@ class VacationController {
       _absences = _absences.map((absence) => `${absence.userName} is on vacation`);
       _absences = [...new Set(_absences)];
 
-      return res.json({ total: _absences.length, vacations: _absences });
+      return res.status(200).json({ total: _absences.length, vacations: _absences });
     } catch (e) {
-      return res.json({ error: 'Error retrieving members on vacation' });
+      return res.status(500).json({ error: 'Error retrieving members on vacation' });
     }
   }
 }

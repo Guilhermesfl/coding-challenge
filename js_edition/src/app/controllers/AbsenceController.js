@@ -14,7 +14,7 @@ class AbsenceController {
         _members = _members.filter((e) => String(e.userId) === userId);
 
         if (_absences.length === 0 || _members.length === 0) {
-          return res.json({ error: 'Member not found with provided user id' });
+          return res.status(404).json({ error: 'Member not found with provided user id' });
         }
       }
 
@@ -34,15 +34,15 @@ class AbsenceController {
         });
 
         if (_absences.length === 0) {
-          return res.json({ error: 'No absence found in the given date' });
+          return res.status(404).json({ error: 'No absence found in the given date' });
         }
       }
 
       _absences = Helper.mergeAbsencesAndMember(_absences, _members);
 
-      return res.json({ total: _absences.length, absences: _absences });
+      return res.status(200).json({ total: _absences.length, absences: _absences });
     } catch (err) {
-      return res.json({ error: 'Error retrieving absences' });
+      return res.status(500).json({ error: 'Error retrieving absences' });
     }
   }
 }

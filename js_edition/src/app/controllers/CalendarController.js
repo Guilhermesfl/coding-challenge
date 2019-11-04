@@ -27,10 +27,10 @@ class CalendarController {
       logger.end();
 
       logger.on('close', () => {
-        return res.download('./temp/absences.ics');
+        return res.status(200).download('./temp/absences.ics');
       });
     } catch (e) {
-      return res.json({ error: 'Error getting calendar file' });
+      return res.status(500).json({ error: 'Error getting calendar file' });
     }
   }
 }
