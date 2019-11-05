@@ -91,9 +91,9 @@ describe('Absences', () => {
         .end((err, res) => {
           res.should.have.status(200);
           res.body.should.have.property('total');
-          res.body.should.have.property('sickness');
-          res.body.sickness
-            .filter((e) => e.includes('sick'))
+          res.body.should.have.property('absences');
+          res.body.absences
+            .filter((e) => e.message.includes('sick'))
             .should.have.lengthOf(res.body.total);
           done();
         });
@@ -107,9 +107,9 @@ describe('Absences', () => {
         .end((err, res) => {
           res.should.have.status(200);
           res.body.should.have.property('total');
-          res.body.should.have.property('vacations');
-          res.body.vacations
-            .filter((e) => e.includes('vacation'))
+          res.body.should.have.property('absences');
+          res.body.absences
+            .filter((e) => e.message.includes('vacation'))
             .should.have.lengthOf(res.body.total);
           done();
         });
