@@ -1,10 +1,12 @@
 import express from 'express';
 import fs from 'fs';
+import cors from 'cors';
 import routes from './routes';
 
 class App {
   constructor() {
     this.server = express();
+    this.middlewares();
     this.routes();
     this.tempDir();
   }
@@ -14,6 +16,7 @@ class App {
   }
 
   middlewares() {
+    this.server.use(cors());
     this.server.use(express.json());
   }
 
