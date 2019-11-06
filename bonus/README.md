@@ -1,5 +1,23 @@
 # Web FrontEnd for Absence Manager
 
+The goal when developing this part of the project was to provide a better way to visualize the data return from the API developed in the js_edition folder. The FrontEnd was developed using ReactJS.
+
+### Installation and usage
+
+1. Install yarn (npm will break the lint)
+
+  - https://yarnpkg.com/en/docs/install#mac-stable
+
+2. Install the project dependencies
+
+  - `yarn`
+
+3. Run server developed in js_edition project
+
+4. Run the FrontEnd to consume the server API (will run by default on port 3000)
+
+  - `yarn start`
+
 ### Lint
 
 The project lint uses the configuration provided by [eslint-config-crewmeister](https://www.npmjs.com/package/eslint-config-crewmeister) package. To run the linter, just type:
@@ -16,7 +34,9 @@ Here is the design:
 
 ![Design of Absence Manager](design.png)
 
-  - It is possible to export the absences in .ics format by clicking on `Export Calendar` button.
-  - It is possible to filter absences due to sickness by clicking on `Sickness` button.
-  - It is possible to filter absences due to vacation by clicking on `Vacations` button.
-  - It is possible to filter absences by user by clicking on `Search` icon and filling the input field.
+Buttons:
+
+  - `Export Calendar` - downloads all absences in .ics file format.
+  - `Sickness` - Filters absences by sickness type.
+  - `Vacations` - Filters absences by sickness type.
+  - `Search` - Filter absences using userId and startDate and endDate input.
