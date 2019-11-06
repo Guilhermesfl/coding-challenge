@@ -15,7 +15,6 @@ module CmChallenge
             end
           end
         end
-        return absences;
       end
     end
   end
