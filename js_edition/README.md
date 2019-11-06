@@ -26,7 +26,7 @@ The project tests were developed using [Mocha](https://mochajs.org/) and [Chai](
 
 ### Lint
 
-The project lint uses the configuration provided by `https://www.npmjs.com/package/eslint-config-crewmeister`. To run the linter, just type:
+The project lint uses the configuration provided by [eslint-config-crewmeister](https://www.npmjs.com/package/eslint-config-crewmeister) package. To run the linter, just type:
 
   - `yarn lint`
 
@@ -43,5 +43,5 @@ The following routes were developed in the project:
   - `GET /absences?userId=<userId>` - returns a json list of the member with userId absences
   - `GET /absences?startDate=<startDate>&endDate=<endDate>` - returns a json list of the crew absences filtered by userId
   - `GET /absences/vacations` - returns a json list of the crew absences due to vacation
-  - `GET /absences/sickess` - - returns a json list of the crew absences due to sickness
+  - `GET /absences/sickess` - returns a json list of the crew absences due to sickness
 
