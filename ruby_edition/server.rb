@@ -11,6 +11,14 @@ absences = CmChallenge::Api.absences
 members = CmChallenge::Api.members
 CmChallenge::Absences.merge_absences_and_members(absences, members)
 
+namespace '' do
+  get '/' do
+    response = absences
+    CmChallenge::Absences.to_ical(response)
+    send_file 'absences.ics', :filename => 'absences.ics'
+  end
+end
+
 namespace '/absences' do
   before do
     content_type 'application/json'
