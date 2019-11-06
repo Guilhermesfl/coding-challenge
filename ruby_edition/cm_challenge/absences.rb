@@ -16,6 +16,26 @@ module CmChallenge
           end
         end
       end
+      def transform_response(absences)
+        return absences.map do |absence|
+          absence = {
+            :admitterId =>  absence[:admitter_id],
+            :admitterNote =>  absence[:admitter_note],
+            :confirmedAt =>  absence[:confirmed_at],
+            :createdAt =>  absence[:created_at],
+            :crewId =>  absence[:crew_id],
+            :endDate =>  absence[:end_date],
+            :id =>  absence[:id],
+            :memberNote =>  absence[:member_note],
+            :rejectedAt =>  absence[:rejected_at],
+            :startDate =>  absence[:start_date],
+            :type =>  absence[:type],
+            :userId =>  absence[:user_id],
+            :message =>  absence[:message],
+            :userName =>  absence[:userName],
+          }
+        end
+      end
     end
   end
 end
