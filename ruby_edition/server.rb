@@ -18,7 +18,11 @@ namespace '' do
   end
 
   get '/absences' do
-    {:absences => absences, :total => absences.length}.to_json
+    puts(params, absences[0][:user_id])
+    if params[:userId]
+      filter = absences.select { |absence| absence[:user_id] == params[:userId].to_i}
+    end
+    {:absences => filter, :total => filter.length}.to_json
   end
 
   get '/absences/vacations' do
