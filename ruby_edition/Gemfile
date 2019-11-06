@@ -4,3 +4,4 @@ gem 'rspec'
 gem 'guard-rspec', require: false
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'sinatra-cors'
