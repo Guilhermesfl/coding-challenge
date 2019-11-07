@@ -45,3 +45,4 @@ The following routes were developed in the project:
   - `GET /absences/vacations` - returns a json list of the crew absences due to vacation
   - `GET /absences/sickess` - returns a json list of the crew absences due to sickness
 
+It is also possible to filter by date range and user id simultaneously by passing all the params to the query.
