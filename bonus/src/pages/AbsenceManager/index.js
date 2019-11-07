@@ -12,6 +12,7 @@ export default function AbsenceManager({ history }) {
   const [userId, setUserId] = useState(params.get('userId') ? params.get('userId') : '');
   const [startDate, setStartDate] = useState(params.get('startDate') ? params.get('startDate') : '');
   const [endDate, setEndDate] = useState(params.get('endDate') ? params.get('endDate') : '');
+  const [filterType, setFilterType] = useState('all');
 
   useEffect(() => {
     getAbsences('filter');
@@ -20,8 +21,10 @@ export default function AbsenceManager({ history }) {
   async function getAbsences(type) {
     let query = '';
     setTableView(true);
+    setFilterType('all');
     switch (type) {
       case 'all':
+        clearInputs();
         break;
       case 'filter':
         query = '?';
@@ -34,12 +37,20 @@ export default function AbsenceManager({ history }) {
         history.push(query.substr(0, query.length - 1));
         break;
       default:
+        clearInputs();
+        setFilterType(type);
         setTableView(false);
         query = `/${type}`;
         break;
     }
     const response = await api.get(`/absences${query}`);
     setAbsences(response.data.absences);
+  }
+
+  function clearInputs() {
+    setUserId('');
+    setStartDate('');
+    setEndDate('');
   }
 
   async function handleExport() {
@@ -53,9 +64,9 @@ export default function AbsenceManager({ history }) {
   }
 
   function getPattern() {
-    let str1 = '(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9]';
-    str1 += ')|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))';
-    return str1;
+    const str1 = '(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9]';
+    const str2 = ')|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))';
+    return str1 + str2;
   }
 
   return (
@@ -65,9 +76,15 @@ export default function AbsenceManager({ history }) {
       <div className="absences__options">
         <div className="absences__filters">
           <div>
-            <button onClick={ () => getAbsences('all') } className={ 'inactive left' }>All</button>
-            <button onClick={ () => getAbsences('vacations') } className={ 'inactive' }>Vacations</button>
-            <button onClick={ () => getAbsences('sickness') }className={ 'inactive right' }>Sickness</button>
+            <button onClick={ () => getAbsences('all') }
+              className={ `left ${ filterType === 'all' ? 'active' : 'inactive'}` }
+            >All</button>
+            <button onClick={ () => getAbsences('vacations') }
+              className={ (filterType === 'vacations' ? 'active' : 'inactive') }
+            >Vacations</button>
+            <button onClick={ () => getAbsences('sickness') }
+              className={ `right ${ filterType === 'sickness' ? 'active' : 'inactive'}` }
+            >Sickness</button>
           </div>
           <div className="divider" />
           <div>
