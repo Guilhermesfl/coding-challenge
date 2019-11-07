@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 require 'json'
 
 module CmChallenge
+  # API class holds the methods that format the members and absences json files
   class Api
     class << self
       def absences
@@ -20,7 +23,7 @@ module CmChallenge
       end
 
       def symbolize_collection(collection)
-        collection.map { |hash| symbolize_hash(hash)}
+        collection.map { |hash| symbolize_hash(hash) }
       end
 
       def symbolize_hash(hash)
