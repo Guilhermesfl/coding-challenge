@@ -8,6 +8,7 @@ require_relative './cm_challenge/api'
 require_relative './cm_challenge/absences'
 
 set :allow_origin, 'http://localhost:3000'
+set :port, 3333
 
 absences = CmChallenge::Api.absences
 members = CmChallenge::Api.members
