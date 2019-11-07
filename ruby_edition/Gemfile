@@ -8,3 +8,4 @@ gem 'rubocop', require: false
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-cors'
+gem 'rack-test'
