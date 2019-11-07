@@ -1,3 +1,5 @@
-guard :rspec, cmd: "bundle exec rspec" do
-  watch(%r{^(.+)\.rb$}) { "spec/" }
+# frozen_string_literal: true
+
+guard :rspec, cmd: 'bundle exec rspec' do
+  watch(/^(.+)\.rb$/) { 'spec/' }
 end

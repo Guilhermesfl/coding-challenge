@@ -1,7 +1,10 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem 'rspec'
 gem 'guard-rspec', require: false
+gem 'rspec'
+gem 'rubocop', require: false
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'sinatra-cors'
