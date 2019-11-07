@@ -1,54 +1,22 @@
-# Crewmeister coding challenge 
+# Crewmeister coding challenge solution
 
-Hello and thanks in participating in the crewmeister coding challenge. This
-coding exercise will help us get a better feeling about your coding process.
+### Description
 
-If you have any questions, we're happy to help you. Just drop us an 
-email: dev+coding-challenge@crewmeister.com
+To solve the coding challenge and pass all the acceptance criterias, my plan was to develop a application to emulate what a real world API and Web FrontEnd communicating would look like. So I decided to develop the following three project parts:
 
-# Instructions
+  - js_version -> `API using Express`
+  - ruby_version -> `API using Sinatra`
+  - bonus -> `Web FrontEnd using React`
 
-Clone this repository and don't create a fork, so that other candidates 
-can't copy your solution. The repository contains a scaffold for frontend
-and backend candidates including a test setup and a mocked API. You're 
-free to use whatever tools you want to use. (eg. if you're more comfortable
-with a different assertion library feel free to add it).
+Each one of the projects have its own detailed description.
 
-Whenever you're done please zip the project and send it to: 
-dev+coding-challenge@crewmeister.com. If that doesn't work, please upload
-the zip file to a cloud service of your liking, such as GoogleDrive, Dropbox
-or OneDrive, and send us the link.
+#### `js_version` and `ruby_version`
 
-We'll review your submission as soon as possible. Key-points we're going
-to review:
+By default, servers `run on port 3333`
 
-- naming
-- tests
-- duplications
-- code consistency
-- function lengths
-- commits + commit messages
- 
-# Scenario
+#### `bonus`
 
-At crewmeister one of our products is the absence manager. With this product 
-company owners can manage sickness and vacations of employees. Some of our 
-customers want to export their employees absences to outlook. To make our 
-customers happy we decided to provide an iCal export. 
-https://en.wikipedia.org/wiki/ICalendar 
+Provide a Web FrontEnd which consume one of the developed API. So, in order to run the FronEnd and actually see the data, it is necessary that either the `js_edition` or the `ruby_edition` servers are running.
 
-## User Story
+By default, servers `run on port 3000`
 
-As owner of a crew I want to be able to export my employees absences so 
-that I can import them into outlook.
-
-## Acceptance Criteria
-
-- I can get a list of absences including the names of the employee (using api.js or api.rb)
-- I can generate an iCal file and import it into outlook (maybe use a gem or npm package)
-- I can see vacations of my employees as "#{member.name} is on vacation" 
-- I can see sickness of my employees as "#{member.name} is sick" 
-- (Bonus) I can go to http://localhost:3000 and download the iCal file
-- (Bonus) I can go to http://localhost:3000?userId=123 and only receive the absences of the given user
-- (Bonus) I can go to http://localhost:3000?startDate=2017-01-01&endDate=2017-02-01 and only receive the absences in the given date range
-- (Bonus) Build the first 4 acceptance criteria in the other language (for backend candidates in js and for frontend candidates in ruby)
