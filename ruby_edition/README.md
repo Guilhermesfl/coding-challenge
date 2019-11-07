@@ -16,9 +16,13 @@
 
 4. Running the project
 
-  - `bundle exec ruby server.rb`
+  - `bundle exec ruby server.rb` - will run by default on **http://localhost:3333**
+
+After these steps, accessing the server and requesting the routes described in the end of this file will return the data.
 
 ### Running Specs
+
+The project tests were developed using [RSpec](https://rspec.info/) and [RackTest](https://github.com/rack-test/rack-test) which are a test framework and a testing API, respectively. To run the tests, just type:
 
   - `bundle exec rspec` or `bundle exec guard`
 
@@ -40,3 +44,5 @@ The following routes were developed in the project:
   - `GET /absences/sickess` - returns a json list of the crew absences due to sickness
 
 It is also possible to filter by date range and user id simultaneously by passing all the params to the query.
+
+  - Example: **http://localhost:3333/absences**

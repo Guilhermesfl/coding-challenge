@@ -1,6 +1,6 @@
 # Web FrontEnd for Absence Manager
 
-The goal when developing this part of the project was to provide a better way to visualize the data return from the API developed in the js_edition folder. The FrontEnd was developed using ReactJS.
+The goal when developing this part of the project was to provide a better way to visualize the data return from the API developed in the js_edition or ruby_edition project. The FrontEnd was developed using ReactJS.
 
 ### Installation and usage
 
@@ -12,11 +12,13 @@ The goal when developing this part of the project was to provide a better way to
 
   - `yarn`
 
-3. Run server developed in js_edition project
+3. **Run server developed in the js_edition or ruby_edition** (Otherwise the FrontEnd will not be able to retrieve data)
 
-4. Run the FrontEnd to consume the server API (will run by default on port 3000)
+  - `See README from one of the projects for instructions on how to run`
 
-  - `yarn start`
+4. Run the FrontEnd to consume the server API
+
+  - `yarn start` - will run by default on **http://localhost:3000**
 
 ### Lint
 
@@ -39,4 +41,4 @@ Buttons:
   - `Export Calendar` - downloads all absences in .ics file format.
   - `Sickness` - Filters absences by sickness type.
   - `Vacations` - Filters absences by sickness type.
-  - `Search` - Filter absences using userId and startDate and endDate input.
+  - `Search` - Filter absences using userId, startDate and endDate input.

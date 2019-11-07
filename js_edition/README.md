@@ -14,9 +14,11 @@
 
   - `yarn`
 
-4. Run server (will run by default on port 3333)
+4. Run server
 
-  - `yarn dev`
+  - `yarn dev` - will run by default on **http://localhost:3333**
+
+After these steps, accessing the server and requesting the routes described in the end of this file will return the data.
 
 ### Running Specs
 
@@ -46,3 +48,5 @@ The following routes were developed in the project:
   - `GET /absences/sickess` - returns a json list of the crew absences due to sickness
 
 It is also possible to filter by date range and user id simultaneously by passing all the params to the query.
+
+  - Example: **http://localhost:3333/absences**
