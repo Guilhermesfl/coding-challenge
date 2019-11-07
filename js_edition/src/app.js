@@ -1,5 +1,4 @@
 import express from 'express';
-import fs from 'fs';
 import cors from 'cors';
 import routes from './routes';
 
@@ -8,7 +7,6 @@ class App {
     this.server = express();
     this.middlewares();
     this.routes();
-    this.tempDir();
   }
 
   routes() {
@@ -18,12 +16,6 @@ class App {
   middlewares() {
     this.server.use(cors());
     this.server.use(express.json());
-  }
-
-  tempDir() {
-    if (!fs.existsSync('./temp')) {
-      fs.mkdirSync('./temp');
-    }
   }
 }
 

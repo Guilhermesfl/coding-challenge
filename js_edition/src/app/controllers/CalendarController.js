@@ -1,19 +1,14 @@
 import fs from 'fs';
-import { absences, members } from '../../api';
-import Helper from '../../lib/Helper';
 
 class CalendarController {
   async index(req, res) {
     try {
-      let _absences = await absences();
-      const _members = await members();
+      const { absences } = req;
 
-      _absences = Helper.mergeAbsencesAndMember(_absences, _members);
-
-      const logger = fs.createWriteStream('./temp/absences.ics');
+      const logger = fs.createWriteStream('./tmp/absences.ics');
       logger.write('BEGIN:VCALENDAR\n');
       logger.write('VERSION:2.0\n');
-      _absences.forEach((absence) => {
+      absences.forEach((absence) => {
         logger.write('BEGIN:VEVENT\n');
         logger.write(`UID:${absence.id}\n`);
         logger.write(`DTSTART:${absence.startDate.replace(/-/g, '')}\n`);
@@ -27,7 +22,7 @@ class CalendarController {
       logger.end();
 
       logger.on('close', () => {
-        return res.status(200).download('./temp/absences.ics');
+        return res.status(200).download('./tmp/absences.ics');
       });
     } catch (e) {
       return res.status(500).json({ error: 'Error getting calendar file' });
