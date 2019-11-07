@@ -14,6 +14,10 @@
 
   - `bundle install`
 
+4. Running the project
+
+  - `bundle exec ruby server.rb`
+
 ### Running Specs
 
   - `bundle exec rspec` or `bundle exec guard`
