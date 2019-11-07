@@ -51,6 +51,7 @@ export default function AbsenceManager({ history }) {
     setUserId('');
     setStartDate('');
     setEndDate('');
+    history.push('');
   }
 
   async function handleExport() {

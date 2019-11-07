@@ -13,7 +13,7 @@ class CalendarController {
         logger.write(`UID:${absence.id}\n`);
         logger.write(`DTSTART:${absence.startDate.replace(/-/g, '')}\n`);
         logger.write(`DTEND:${absence.endDate.replace(/-/g, '')}\n`);
-        logger.write(`SUMMARY:${absence.userName} is absent due to: ${absence.type}\n`);
+        logger.write(`SUMMARY:${absence.message}\n`);
         logger.write('TZID:W. Europe Standard Time\n');
         logger.write(`DESCRIPTION:${absence.memberNote}\n`);
         logger.write('END:VEVENT\n');

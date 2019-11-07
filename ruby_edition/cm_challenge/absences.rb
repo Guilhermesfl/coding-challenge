@@ -17,7 +17,7 @@ module CmChallenge
         file.puts("BEGIN:VEVENT\nUID:#{event[:id]}")
         file.puts("DTSTART:#{event[:start_date].gsub('-', '')}")
         file.puts("DTEND:#{event[:end_date].gsub('-', '')}")
-        file.puts("SUMMARY:#{event[:userName]} is absent due to: #{event[:type]}")
+        file.puts("SUMMARY:#{event[:message]}")
         file.puts('TZID:W. Europe Standard Time')
         file.puts("DESCRIPTION:#{event[:member_note]}")
         file.puts('END:VEVENT')
@@ -28,6 +28,11 @@ module CmChallenge
           members.each do |member|
             if absence[:user_id] == member[:user_id]
               absence[:userName] = member[:name]
+              if absence[:type] == 'vacation'
+                absence[:message] = "#{absence[:userName]} is on vacation"
+              else
+                absence[:message] = "#{absence[:userName]} is sick"
+              end
               break
             end
           end

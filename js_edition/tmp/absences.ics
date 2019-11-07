@@ -4,7 +4,7 @@ BEGIN:VEVENT
 UID:2351
 DTSTART:20170113
 DTEND:20170113
-SUMMARY:Mike is absent due to: sickness
+SUMMARY:Mike is sick
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -12,7 +12,7 @@ BEGIN:VEVENT
 UID:2521
 DTSTART:20170105
 DTEND:20170105
-SUMMARY:Mike is absent due to: vacation
+SUMMARY:Mike is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:ganzer tag
 END:VEVENT
@@ -20,7 +20,7 @@ BEGIN:VEVENT
 UID:2634
 DTSTART:20170111
 DTEND:20170111
-SUMMARY:Ines is absent due to: vacation
+SUMMARY:Ines is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:Nachmittag 0,5 Tage. Danke.
 END:VEVENT
@@ -28,7 +28,7 @@ BEGIN:VEVENT
 UID:2904
 DTSTART:20170202
 DTEND:20170206
-SUMMARY:Daniel is absent due to: vacation
+SUMMARY:Daniel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -36,7 +36,7 @@ BEGIN:VEVENT
 UID:2909
 DTSTART:20170223
 DTEND:20170311
-SUMMARY:Sandra is absent due to: vacation
+SUMMARY:Sandra is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:Urlaub
 END:VEVENT
@@ -44,7 +44,7 @@ BEGIN:VEVENT
 UID:2942
 DTSTART:20170203
 DTEND:20170203
-SUMMARY:Mike is absent due to: vacation
+SUMMARY:Mike is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -52,7 +52,7 @@ BEGIN:VEVENT
 UID:2943
 DTSTART:20170303
 DTEND:20170303
-SUMMARY:Mike is absent due to: vacation
+SUMMARY:Mike is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -60,7 +60,7 @@ BEGIN:VEVENT
 UID:2955
 DTSTART:20170327
 DTEND:20170407
-SUMMARY:Manuel is absent due to: vacation
+SUMMARY:Manuel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:Uni: Blockpraktikum
 END:VEVENT
@@ -68,7 +68,7 @@ BEGIN:VEVENT
 UID:3229
 DTSTART:20170216
 DTEND:20170216
-SUMMARY:Mike is absent due to: vacation
+SUMMARY:Mike is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -76,7 +76,7 @@ BEGIN:VEVENT
 UID:3235
 DTSTART:20170220
 DTEND:20170225
-SUMMARY:Max is absent due to: sickness
+SUMMARY:Max is sick
 TZID:W. Europe Standard Time
 DESCRIPTION:Skiurlaub
 END:VEVENT
@@ -84,7 +84,7 @@ BEGIN:VEVENT
 UID:3269
 DTSTART:20170227
 DTEND:20170227
-SUMMARY:Bernhard is absent due to: vacation
+SUMMARY:Bernhard is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -92,7 +92,7 @@ BEGIN:VEVENT
 UID:3383
 DTSTART:20170227
 DTEND:20170227
-SUMMARY:Daniel is absent due to: vacation
+SUMMARY:Daniel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -100,7 +100,7 @@ BEGIN:VEVENT
 UID:3452
 DTSTART:20170330
 DTEND:20170331
-SUMMARY:Bernhard is absent due to: vacation
+SUMMARY:Bernhard is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:Den alten Urlaubsantrag vom 29.03.2017 - 31.03.2017 bitte löschen.
 Danke :)
@@ -109,7 +109,7 @@ BEGIN:VEVENT
 UID:3597
 DTSTART:20170313
 DTEND:20170313
-SUMMARY:Mike is absent due to: vacation
+SUMMARY:Mike is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -117,7 +117,7 @@ BEGIN:VEVENT
 UID:3600
 DTSTART:20170310
 DTEND:20170310
-SUMMARY:Max is absent due to: vacation
+SUMMARY:Max is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -125,7 +125,7 @@ BEGIN:VEVENT
 UID:3601
 DTSTART:20170310
 DTEND:20170310
-SUMMARY:Max is absent due to: vacation
+SUMMARY:Max is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -133,7 +133,7 @@ BEGIN:VEVENT
 UID:3604
 DTSTART:20170313
 DTEND:20170313
-SUMMARY:Max is absent due to: vacation
+SUMMARY:Max is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -141,7 +141,7 @@ BEGIN:VEVENT
 UID:3605
 DTSTART:20170314
 DTEND:20170315
-SUMMARY:Max is absent due to: sickness
+SUMMARY:Max is sick
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -149,7 +149,7 @@ BEGIN:VEVENT
 UID:3606
 DTSTART:20170316
 DTEND:20170318
-SUMMARY:Max is absent due to: vacation
+SUMMARY:Max is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -157,7 +157,7 @@ BEGIN:VEVENT
 UID:3618
 DTSTART:20170313
 DTEND:20170313
-SUMMARY:Max is absent due to: vacation
+SUMMARY:Max is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:Test
 END:VEVENT
@@ -165,7 +165,7 @@ BEGIN:VEVENT
 UID:3629
 DTSTART:20170614
 DTEND:20170616
-SUMMARY:Mike is absent due to: vacation
+SUMMARY:Mike is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -173,7 +173,7 @@ BEGIN:VEVENT
 UID:3656
 DTSTART:20170311
 DTEND:20170311
-SUMMARY:Max is absent due to: vacation
+SUMMARY:Max is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -181,7 +181,7 @@ BEGIN:VEVENT
 UID:3690
 DTSTART:20170313
 DTEND:20170313
-SUMMARY:Bernhard is absent due to: sickness
+SUMMARY:Bernhard is sick
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -189,7 +189,7 @@ BEGIN:VEVENT
 UID:3748
 DTSTART:20170421
 DTEND:20170422
-SUMMARY:Ines is absent due to: vacation
+SUMMARY:Ines is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:Barcamp Salzburg
 END:VEVENT
@@ -197,7 +197,7 @@ BEGIN:VEVENT
 UID:3752
 DTSTART:20161231
 DTEND:20170102
-SUMMARY:Max is absent due to: vacation
+SUMMARY:Max is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -205,7 +205,7 @@ BEGIN:VEVENT
 UID:3884
 DTSTART:20170824
 DTEND:20170911
-SUMMARY:Mike is absent due to: vacation
+SUMMARY:Mike is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:Sommerurlaub
 END:VEVENT
@@ -213,7 +213,7 @@ BEGIN:VEVENT
 UID:4101
 DTSTART:20170327
 DTEND:20170327
-SUMMARY:Daniel is absent due to: vacation
+SUMMARY:Daniel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -221,7 +221,7 @@ BEGIN:VEVENT
 UID:4462
 DTSTART:20170411
 DTEND:20170411
-SUMMARY:Mike is absent due to: sickness
+SUMMARY:Mike is sick
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -229,7 +229,7 @@ BEGIN:VEVENT
 UID:4470
 DTSTART:20170412
 DTEND:20170412
-SUMMARY:Daniel is absent due to: vacation
+SUMMARY:Daniel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -237,7 +237,7 @@ BEGIN:VEVENT
 UID:4471
 DTSTART:20170424
 DTEND:20170426
-SUMMARY:Bernhard is absent due to: vacation
+SUMMARY:Bernhard is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:bitte den urlaub in der vorwoche  17-21 zurückziehen. merci :)
 END:VEVENT
@@ -245,7 +245,7 @@ BEGIN:VEVENT
 UID:4626
 DTSTART:20170710
 DTEND:20170728
-SUMMARY:Marlene is absent due to: vacation
+SUMMARY:Marlene is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -253,7 +253,7 @@ BEGIN:VEVENT
 UID:4753
 DTSTART:20170428
 DTEND:20170428
-SUMMARY:Ines is absent due to: vacation
+SUMMARY:Ines is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -261,7 +261,7 @@ BEGIN:VEVENT
 UID:5291
 DTSTART:20170626
 DTEND:20170626
-SUMMARY:Linda is absent due to: sickness
+SUMMARY:Linda is sick
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -269,7 +269,7 @@ BEGIN:VEVENT
 UID:5293
 DTSTART:20170619
 DTEND:20170623
-SUMMARY:Bernhard is absent due to: vacation
+SUMMARY:Bernhard is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -277,7 +277,7 @@ BEGIN:VEVENT
 UID:5409
 DTSTART:20170518
 DTEND:20170518
-SUMMARY:Bernhard is absent due to: vacation
+SUMMARY:Bernhard is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -285,7 +285,7 @@ BEGIN:VEVENT
 UID:5555
 DTSTART:20170524
 DTEND:20170524
-SUMMARY:Daniel is absent due to: vacation
+SUMMARY:Daniel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -293,7 +293,7 @@ BEGIN:VEVENT
 UID:5740
 DTSTART:20170530
 DTEND:20170530
-SUMMARY:Bernhard is absent due to: vacation
+SUMMARY:Bernhard is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -301,7 +301,7 @@ BEGIN:VEVENT
 UID:5769
 DTSTART:20170626
 DTEND:20170630
-SUMMARY:Mike is absent due to: vacation
+SUMMARY:Mike is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -309,7 +309,7 @@ BEGIN:VEVENT
 UID:5879
 DTSTART:20170805
 DTEND:20170820
-SUMMARY:Linda is absent due to: sickness
+SUMMARY:Linda is sick
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -317,7 +317,7 @@ BEGIN:VEVENT
 UID:6310
 DTSTART:20170626
 DTEND:20170627
-SUMMARY:Daniel is absent due to: vacation
+SUMMARY:Daniel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -325,7 +325,7 @@ BEGIN:VEVENT
 UID:6311
 DTSTART:20170629
 DTEND:20170629
-SUMMARY:Daniel is absent due to: vacation
+SUMMARY:Daniel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:
 END:VEVENT
@@ -333,7 +333,7 @@ BEGIN:VEVENT
 UID:6886
 DTSTART:20170805
 DTEND:20170812
-SUMMARY:Manuel is absent due to: vacation
+SUMMARY:Manuel is on vacation
 TZID:W. Europe Standard Time
 DESCRIPTION:Pfadfindersommerlager
 END:VEVENT

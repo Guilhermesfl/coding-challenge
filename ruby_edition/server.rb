@@ -50,15 +50,15 @@ namespace '/absences' do
   end
 
   get '/vacations' do
+    response = absences
     response = absences.select { |abs| abs[:type] == 'vacation' }
-    response.each { |abs| abs[:message] = abs[:userName] + ' is on vacation' }
     { absences: CmChallenge::Absences.transform_response(response),
       total: response.length }.to_json
   end
 
   get '/sickness' do
+    response = absences
     response = absences.select { |abs| abs[:type] == 'sickness' }
-    response.each { |abs| abs[:message] = abs[:userName] + ' is sick' }
     { absences: CmChallenge::Absences.transform_response(response),
       total: response.length }.to_json
   end
